@@ -1,21 +1,13 @@
-<div class="container center-align">
-  <h4>Creative team</h4>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card large">
-      <div class="card-image" *ngFor="let images of datasource">
-       <img  src="{{images.url}}" class="tn"  height="246" data-toggle="modal" data-target="#selectedImageModal"
-         (click)=setSelectedImage(image)>
-
-  <div class="card-content">
-       <div class="side back">
-         <p><strong>{{images.title}}</strong></p>
-         <p><strong>{{images.position}}</strong></p>
-                <p>{{images.caption}}</p>
-       </div>
-    </div>
- </div>
+<div class="container" id="selectedImageModal" >
+      <div class="modal-body">
+        <img *ngIf="selectedImage" src="{{selectedImage.url}}" >
       </div>
-    </div>
-  </div>
+<ul id="thumbnailsList">
+  <li *ngFor="let image of datasource" >
+    <img src="{{image.url}}" class="tn"
+         width="191" height="146"
+         data-toggle="modal" data-target="#selectedImageModal"
+         (click)=setSelectedImage(image)>
+  </li>
+</ul>
 </div>

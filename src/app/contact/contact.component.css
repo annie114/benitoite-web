@@ -1,0 +1,19 @@
+h4,h6{
+  color: indigo;
+}
+.hide-on-med-and-down >li > i{
+  padding-top: 1.5em;
+
+}
+i {
+  padding-right: 0.5em;
+}
+/*.col.s7{*/
+/*margin-left: 0.5em;*/
+/*}*/
+.container.col.s12{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdhwXl-lf0GlbWYWtXXydWcChAnROFO4bjG9-UOru0qkopQJ8"
+  );
+  min-height: 400px;
+  min-width: 700px;
+}

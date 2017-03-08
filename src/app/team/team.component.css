@@ -1,0 +1,54 @@
+.card{
+  /*height: 50px;*/
+}
+
+h4{
+  color: indigo;
+}
+/**.ul { padding:0;*!*/
+/*!*!*width:780px;*!*!*/
+/*!*margin:20px auto}*!*/
+/*li.page.side{ display:inline;}*/
+/*.tn{*/
+  /*margin:2px 0px;*/
+  /*box-shadow:#999 1px 1px 3px 1px;*/
+/*body {*/
+  /*font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;*/
+  /*margin: 12px 0;*/
+/*}*/
+/*.page1 {*/
+  /*cursor: pointer;*/
+  /*height: 350px;*/
+  /*perspective: 600;*/
+  /*position: relative;*/
+  /*width: 350px;*/
+  /*padding:0;*/
+  /*!*width:780px;*!*/
+  /*margin:20px auto*/
+/*}*/
+/*.page{*/
+  /*height: 100%;*/
+  /*position: absolute;*/
+  /*transform-style: preserve-3d;*/
+  /*transition: all 1s ease-in-out;*/
+  /*width: 100%;*/
+  /*display: inline;*/
+/*}*/
+/*.page:hover {*/
+  /*transform: rotateY(180deg);*/
+/*}*/
+/*.page .side {*/
+  /*backface-visibility: hidden;*/
+  /*border-radius: 6px;*/
+  /*height: 100%;*/
+  /*position: absolute;*/
+  /*overflow: hidden;*/
+  /*width: 100%;*/
+  /*display: inline;*/
+/*}*/
+/*.page .back {*/
+  /*background: #eaeaed;*/
+  /*color: #0087cc;*/
+  /*text-align: center;*/
+  /*transform: rotateY(180deg);*/
+/*}*/

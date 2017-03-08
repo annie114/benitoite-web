@@ -1,3 +1,72 @@
-<p>
-  contact works!
-</p>
+<div class="container" >
+  <div class="row">
+    <div class="col s7" >
+      <div class="card #ffe0b2 orange lighten-4">
+        <div class="row">
+          <div class="col m10 offset-m1 s6">
+            <h4 class="center-align">Contact Form</h4>
+            <div class="row">
+              <form class="col s12"  #f="ngForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                  <div class="input-field col m6 s12">
+                    <input id="first" type="text" class="validate" [(ngModel)]="user.firstName" required>
+                    <label for="first">First Name</label>
+                  </div>
+                  <div class="input-field col m6 s12">
+                    <input id="last" type="text" class="validate" [(ngModel)]="user.lastName" required>
+                    TODO: remove this: {{user.name}}
+                    <label for="last">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col m6 s12">
+                    <i class="mdi-content-mail prefix"></i>
+                    <input id="email" type="email" class="validate" [(ngModel)]="user.email" required>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col m6 s12">
+                    <i class="mdi-maps-store-mall-directory prefix"></i>
+                    <input id="subject" type="text" [(ngModel)]="user.subject" class="validate">
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="message" class="materialize-textarea"  [(ngModel)]="user.message"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col m12">
+                    <p class="right-align"><button class="btn btn-large waves-effect waves-light" type="button" name="action">Send Message</button></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s5">
+      <div id="objects"  class="">
+        <div class="card center-align">
+          <h4>{{ title }}</h4>
+          <ul class="hide-on-med-and-down">
+            <li><i class="tiny material-icons">location_on</i>hall five 2 <sup>nd</sup>floor room No_ 1218</li>
+            <li><i class="tiny material-icons">email</i> <strong>Email: </strong> benitoite@gmail.com</li>
+            <li><i class="tiny material-icons">call</i><strong>Phone: </strong> 0654988047,</li>
+            <ol><li> 0656783433,</li><li>  0712890033</li></ol>
+            <li><i class="tiny material-icons">public</i><a target="_blank" [href]="'file://' + outputPath ">benitoite.co.tz</a>
+            </li>
+          </ul>
+
+          <h6> Thanks for visiting our site </h6>
+        </div>
+      </div>
+    </div>
+    <div class="container col s12">
+    </div>
+  </div>
+</div>

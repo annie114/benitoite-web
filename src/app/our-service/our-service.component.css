@@ -1,0 +1,18 @@
+i {
+  border-radius: 6px;
+  background: #6194b3;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+  width: 95px;
+}
+i:hover {
+  background: #b38077;
+  border-radius: 50%;
+}
+.col.s12.m4.l4{
+}

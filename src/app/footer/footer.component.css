@@ -1,0 +1,12 @@
+h4{
+  color: #5d8281;
+}
+.left.hide-on-med-and-down >li >a,li,#contact{
+  color: #ffedff;
+  text-decoration: no-underline;
+
+}
+.divider{
+  margin-top: 2em;
+}
+
