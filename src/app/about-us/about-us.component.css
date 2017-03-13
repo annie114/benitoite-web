@@ -2,3 +2,39 @@
   padding-top: 6em;
   padding-left: 4em;
 }
+.page1 {
+  cursor: pointer;
+  height: 450px;
+  perspective: 600px;
+  position: relative;
+}
+.page {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.page:hover {
+  transform: rotateY(180deg);
+}
+.page .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.page .back {
+  /*background: #eaeaed;*/
+  color: #0087cc;
+  text-align: center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}

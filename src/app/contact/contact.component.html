@@ -6,40 +6,41 @@
           <div class="col m10 offset-m1 s6">
             <h4 class="center-align">Contact Form</h4>
             <div class="row">
-              <form class="col s12"  #f="ngForm" (ngSubmit)="onSubmit()">
+              <form class="col s12" novalidate #f="ngForm" (ngSubmit)="save(f.value,f.valid)">
                 <div class="row">
                   <div class="input-field col m6 s12">
-                    <input id="first" type="text" class="validate" [(ngModel)]="user.firstName" required>
-                    <label for="first">First Name</label>
+                    <input type="text" id="firstName" name="firstName" #name="ngModel" [(ngModel)]="user.firstName" required minlength="5">
+                    <small [hidden]="name.valid || (name.pristine && !f.submitted)">Name is required</small>
+                    <label for="firstName">First Name</label>
                   </div>
                   <div class="input-field col m6 s12">
-                    <input id="last" type="text" class="validate" [(ngModel)]="user.lastName" required>
-                    TODO: remove this: {{user.name}}
-                    <label for="last">Last Name</label>
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" name="lastName" #name="ngModel" [(ngModel)]="user.lastName" required minlength="4">
+                    <small [hidden]="name.valid || (name.pristine && !f.submitted)">Name is required</small>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col m6 s12">
-                    <i class="mdi-content-mail prefix"></i>
-                    <input id="email" type="email" class="validate" [(ngModel)]="user.email" required>
                     <label for="email">Email</label>
+                    <input id="email" type="email" name="email" #name="ngModel" [(ngModel)]="user.email" required minlength="5">
+                    <small [hidden]="name.valid || (name.pristine && !f.submitted)">Email is required</small>
                   </div>
                   <div class="input-field col m6 s12">
-                    <i class="mdi-maps-store-mall-directory prefix"></i>
-                    <input id="subject" type="text" [(ngModel)]="user.subject" class="validate">
                     <label for="subject">Subject</label>
+                    <input id="subject" type="text" name="subject" #name="ngModel" [(ngModel)]="user.subject" >
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <textarea id="message" class="materialize-textarea"  [(ngModel)]="user.message"></textarea>
                     <label for="message">Message</label>
+                    <textarea id="message" class="materialize-textarea" name="message" [(ngModel)]="user.message" #name="ngModel" required minlength="5" maxlength="500"></textarea>
+                    <small [hidden]="name.valid || (name.pristine && !f.submitted)">Message is required</small>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col m12">
-                    <p class="right-align"><button class="btn btn-large waves-effect waves-light" type="button" name="action">Send Message</button></p>
+                    <button class="btn btn-medium bt waves-effect waves-light right-align" type="submit">Send Message</button>
                   </div>
                 </div>
               </form>

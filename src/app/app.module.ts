@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { OurServiceComponent } from './our-service/our-service.component';
 import { TeamComponent } from './team/team.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CommonHeaderComponent } from './common-header/common-header.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     ContactComponent,
     OurServiceComponent,
     TeamComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CommonHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -53,4 +55,6 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

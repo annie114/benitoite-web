@@ -1,11 +1,12 @@
-
+  <!--website navigaion-->
 <div class="navbar-fixed">
-  <nav class=" #7986cb indigo lighten-2">
+  <nav  id="fixednav">
     <div class="nav-wrapper">
       <a href="" class="brand-logo">{{ title }}</a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse" materialize="sideNav"><i class="material-icons">menu</i>
+      <a href="#" data-activates="nav-mobile" class="button-collapse collapse navbar-collapse " materialize="sideNav">
+        <i class="material-icons">menu</i>
       </a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down" id="fixednav">
         <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
         <li><a routerLink="/about_us" routerLinkActive="active">about</a></li>
         <li><a routerLink="/our_service" routerLinkActive="active">Our service</a> </li>
@@ -24,6 +25,5 @@
     </div>
   </nav>
 </div>
-
 
 

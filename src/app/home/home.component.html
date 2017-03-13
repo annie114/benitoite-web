@@ -1,94 +1,147 @@
 <div class="container-fluid">
-  <!--<div class="container">-->
-  <div class="row">
-    <div class="col s12 m12">
-      <div class="card">
-        <div class="card-image">
-          <img src="src/images/1-vXjx4Y7EgQBwALkaeZJ0Cg.jpeg" style="height:550px">
-          <div class="one card-title">
-          <h3 class="center-align">Benitoites is the best company for  your software problem.lets play together in making the world in better position</h3>
-          </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-      <div class="divider"></div>
-      <h4 class="center-align">Benitoites is the best company for  your software problem.</h4>
-
-  <div class="container">
+  <!--animation section">-->
+  <section>
     <div class="row">
-      <div class="col s12 m7">
-
-        <div class="carousel">
-          <ul class="slides">
-            <li *ngFor="let image of images" style="height: 20em">
-              <h2>{{image.title}}</h2>
-              <img src="{{image.url}}" alt="">
-            </li>
-          </ul>
-
+      <div class="col s12 m12">
+        <div class="card">
+          <div class="card-image">
+            <img src="src/images/1-vXjx4Y7EgQBwALkaeZJ0Cg.jpeg" style="height:550px">
+            <div class="one card-title">
+              <h3 class="center-align">Benitoites is the best company for  your software problem.lets play together in making the world in better position</h3>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col s12 m5">
-        <div class="card-panel teal">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I
-            require little markup to use effectively. I am similar to what is called a panel in other
-            frameworks.I am a very simple card. I am good at containing small bits of information.
-         I am a very simple card. I am good at containing small bits of information.
-         I am a very simple card. I am good at containing small bits of information.
+    </div>
+  </section>
+  <!--end of animation-->
 
-          </span>
+  <!--third section for the service we provide -->
+  <section class="section">
+    <div class="row center-align container">
+
+      <h5><strong>{{ heading1 }}</strong></h5>
+      <div class="col s12 m3 l3">
+        <i class="large material-icons">phone_iphone</i>
+        <h5>Mobile application</h5>
+        <p>The world of technology is growing everyday.  coming from mobile devices.
+          Benitoite can help to
+          create applications that visually represents your brand and makes an impact on your business</p>
+      </div>
+      <div class="col s12 m3 l3">
+        <i class="large material-icons">computer</i>
+        <h5>web application</h5>
+        <p>Are you looking for a Web company that will transform your business online.
+          We develop websites that work,
+          and look great, across every platform. You mention it, we design it.</p>
+      </div>
+      <div class="col s12 m3 l3">
+        <i class="large material-icons">devices_other</i>
+        <h5>hosting</h5>
+        <p>With so many providers offering extensive packages, including site builder tools,
+          domains, and disk space, making the right decision can be a challenge.
+          Our comparison chart will save everyone time and money</p>
+      </div>
+      <div class="col s12 m3 l3">
+        <i class="large material-icons">colorize</i>
+        <h5>Domain Registration</h5>
+        <p>Looking to buy a domain? Many hosting services throw in the name
+          for free and even let users register it as part of the package.
+          By offering the first year free of charge,
+          these partners give their customers real value for money.</p>
+      </div>
+    </div>
+  </section>
+  <!--end of this section-->
+
+  <!--<div class="container">-->
+  <!--<div class="row">-->
+  <!--<div class="col s12 m7">-->
+
+  <!--<div class="carousel">-->
+  <!--<ul class="slides">-->
+  <!--<li *ngFor="let image of images" style="height: 20em">-->
+  <!--<h2>{{image.title}}</h2>-->
+  <!--<img src="{{image.url}}" alt="">-->
+  <!--</li>-->
+  <!--</ul>-->
+
+  <!--</div>-->
+  <!--</div>-->
+  <!--<div class="col s12 m5">-->
+  <!--<div class="card-panel teal">-->
+  <!--<span class="white-text">I am a very simple card. I am good at containing small bits of information.-->
+  <!--I am convenient because I-->
+  <!--require little markup to use effectively. I am similar to what is called a panel in other-->
+  <!--frameworks.I am a very simple card. I am good at containing small bits of information.-->
+  <!--I am a very simple card. I am good at containing small bits of information.-->
+  <!--I am a very simple card. I am good at containing small bits of information.-->
+
+  <!--</span>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--start of portfolio section-->
+
+  <section class="page #e0e0e0 grey lighten-1">
+    <div class="row">
+      <h2 class="portfolio center align"><span id="page1">{{ title}}</span><span id="page2"> changes</span><span id="page3">  the world</span></h2>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="src/images/images (2).jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Web application<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Web application<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="src/images/images (3).jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Mobile application<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Mobile application<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="src/images/images (1).jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Web hosting<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Web hosting<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+  <!--end of the portifolio section-->
+
+  <!--start of last section-->
+
+  <section class="section1 center align">
+    <h2 class="portfolio center align"><strong><span id="page1">{{ head1 }} </span><span id="page2">part </span> <span id="page3">of solution</span></strong></h2>
+    <h6 id="home"><q><i>{{ head2 }} </i></q></h6>
+  </section>
+  <!--end of last section-->
+
 </div>
-  <div class="page row">
-    <div class="col s12 m4 l4">
-      <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="src/images/images (2).jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Web application<i class="material-icons right">more_vert</i></span>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Web application<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m4 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="src/images/images (3).jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Mobile application<i class="material-icons right">more_vert</i></span>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Mobile application<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
-  </div>
-<div class="col s12 m4 l4">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="src/images/images (1).jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Web hosting<i class="material-icons right">more_vert</i></span>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Web hosting<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-</div>
-  </div>
-  </div>
 
 
 

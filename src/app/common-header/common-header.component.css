@@ -1,0 +1,20 @@
+.logo-image{
+  height: 150px;
+  margin-top: 6px;
+}
+#content {
+  display: block;
+  background: #fff;
+  padding: 14px 20px;
+}
+
+#logo { display: block; border: 1px solid #232323; border-bottom-width: 0; }
+#logobg {
+  display: block;
+  width: 100%;
+  /*height: 130px;*/
+  /*background: url('images/logo.png') top left no-repeat;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

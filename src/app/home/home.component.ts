@@ -9,7 +9,17 @@ import {Image} from './image.interface';
 export class HomeComponent implements OnInit {
   public images = IMAGES;
 
-  constructor() { }
+          title = "benitoite ";
+
+        heading1= `'Benitoite based on solving your software problems.we create web application,;
+  mobile application,domain name registration and hosting.the service we give results to the best product`
+
+      head1= `we are`;
+      head2 =`bemitoite is the part of solution in web development.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+        `;
 
   ngOnInit() {
   }
