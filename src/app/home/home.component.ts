@@ -1,8 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+  keyframes,
+  group
+
+} from '@angular/core';
+
 import {Image} from './image.interface';
+
+
 
 @Component({
   selector: 'app-home',
+  animations: [trigger('homeAnimation',[
+
+    state('enter',style({})),
+
+    transition('* => void', [
+      style({height: '*'}),
+      animate(250, style({height:50}))
+    ])
+    ]
+  )
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -22,6 +47,13 @@ export class HomeComponent implements OnInit {
         `;
 
   ngOnInit() {
+
+      // $( "a" ).click(function( event ) {
+      //
+      //   alert( "Thanks for visiting!" );
+      //
+      // });
+
   }
 
 }
@@ -30,7 +62,7 @@ export class HomeComponent implements OnInit {
 var IMAGES: Image[] = [
   { "title": "Web application", "url": "src/images/Web-developer.jpg" },
   { "title": "mobile application", "url": "src/images/mobile .png" },
-  { "title": "desktop application", "url": "src/images/desktop.jpg" },
+  { "title": "desktop application", "url": "src/images/1-vXjx4Y7EgQBwALkaeZJ0Cg.jpeg" },
   { "title": "web hosting", "url": "src/images/images.jpg" },
   { "title": "domain registration", "url": "src/images/domain.jpg" }
 ];

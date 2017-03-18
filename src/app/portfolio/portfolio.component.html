@@ -1,92 +1,20 @@
 <div class="container ">
   <div class="page row">
-    <div class="col s12 m4 l4">
+    <div class="col s12 m4 l4" *ngFor="let portfolio of portfolios">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="src/images/images (2).jpg">
+          <img class="activator" src="{{portfolio.url}}">
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Tuseme Web application<i class="material-icons right">more_vert</i></span>
+          <span class="card-title activator grey-text text-darken-4">{{portfolio.title}}<i class="material-icons right">more_vert</i></span>
         </div>
         <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Tuseme Web application<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <span class="card-title grey-text text-darken-4">{{portfolio.title}}<i class="material-icons right">close</i></span>
+          <p>{{portfolio.description}}</p>
         </div>
       </div>
     </div>
-    <div class="col s12 m4 l4">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="src/images/images (3).jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Kipaji Mobile application<i class="material-icons right">more_vert</i></span>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Kipaji Mobile application<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m4 l4">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="src/images/images (1).jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Ecosytem Web application<i class="material-icons right">more_vert</i></span>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Ecosytem Web application<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
+
   </div>
-<!--end of row one-->
-<div class="page row">
-  <div class="col s12 m4 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="src/images/images (2).jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Benitoite Website<i class="material-icons right">more_vert</i></span>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Benitoite Website<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m4 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="src/images/images (3).jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Wazawa Website<i class="material-icons right">more_vert</i></span>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Wazawa Website<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m4 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="src/images/images (1).jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Web hosting<i class="material-icons right">more_vert</i></span>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Web hosting<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 
